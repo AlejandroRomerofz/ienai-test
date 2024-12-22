@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ienai Space Technical Test
 
-## Getting Started
+This is a technical test project created using **Next.js** and **Material UI** as part of a skills assessment for **Ienai Space**. The project consists of two main features:
 
-First, run the development server:
+1. A table with pagination, filters, and static data.
+2. A Python playground compatible with Plotly to display interactive graphs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Table Component**: A fully functional table with pagination, filtering, and static data display.
+- **Python Playground**: A Python environment where you can execute code and generate plots using Plotly.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To get the project running locally, follow these steps:
 
-## Learn More
+1. Clone the repository to your local machine.
+2. Navigate to the project folder in your terminal.
+3. Run the following command to install the required dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Once the dependencies are installed, build the application:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run build
+   ```
 
-## Deploy on Vercel
+5. Finally, start the application:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run start
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Python Playground Setup
+
+For the Python playground to work correctly, you need to create a virtual environment and install the required Python dependencies.
+
+1. Run the following command to create the virtual environment:
+
+   ```bash
+   npm run venv
+   ```
+
+2. This will set up the Python environment and install the necessary dependencies for the playground, including **Plotly** for graph generation.
+
+## Technologies Used
+
+- **Next.js** for the React framework.
+- **Material UI** for the UI components.
+- **Python** for the playground and Plotly graphing.
+
+## How to Use
+
+- **Table**: Interact with the table by applying filters and navigating through the paginated data.
+- **Python Playground**: Write and execute Python code to generate interactive plots using Plotly. The environment is pre-configured for this purpose.
+
+## Conclusion
+
+This project demonstrates my ability to build full-stack applications using Next.js and Material UI, as well as my understanding of integrating external technologies like Python for interactive features.
+
+Feel free to explore and test the application.

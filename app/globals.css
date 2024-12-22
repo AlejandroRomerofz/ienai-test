@@ -1,21 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #282c34;
+  --foreground: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cm-focused {
+  outline: 0 !important;
+}
+
+/* Custom scrollbar */
+
+*::-webkit-scrollbar {
+  width: 8px; /* Ancho de la scrollbar */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgba(212, 212, 212, 0.3); /* Scroll semitransparente */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(172, 172, 172, 0.5); /* Más visible al pasar el cursor */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* Pista transparente */
+}
+
+/*Table styles*/
+
+.table * {
+  color: white !important;
+}
+
+.MuiDataGrid-row--borderBottom {
+  background-color: rgb(34, 34, 34) !important;
+}
+
+.MuiPaper-root {
+  background-color: rgb(72, 72, 72) !important;
+}
+
+.MuiList-root *,
+.MuiDataGrid-filterForm * {
+  color: white !important;
 }
